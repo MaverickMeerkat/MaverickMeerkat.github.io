@@ -1,5 +1,6 @@
 # project
 _site
+vendor
 .sass-cache
 .vagrant
 
