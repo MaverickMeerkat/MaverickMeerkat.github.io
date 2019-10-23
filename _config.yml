@@ -38,7 +38,7 @@ avatar: "/img/avatar-icon.png"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
+navbar-col: "#A5A5F5"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
@@ -69,9 +69,9 @@ author:
 social-network-links:
   rss: true
   email: "davidrefaeli@gmail.com"
-  facebook: David Refaeli
+  facebook: david.refaeli.84
   github: MaverickMeerkat
-  twitter: SavvyLearner
+  twitter: SavLearn
 #  reddit: yourname
   linkedin: david-refaeli-2a66a4149
 #  xing: yourname
