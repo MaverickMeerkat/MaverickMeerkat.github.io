@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Names and Meanings
-subtitle: Each post also has a subtitle
-tags: [test]
+subtitle: The development of words through time and cultures
+tags: [Etymology, Spanish, Hebrew, Liver, a Think]
 comments: true
 ---
 
