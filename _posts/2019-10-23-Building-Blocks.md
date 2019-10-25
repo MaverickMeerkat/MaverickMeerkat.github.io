@@ -5,6 +5,7 @@ subtitle: pre-words concepts
 date: 2018-06-10
 tags: [Etymology, Thinks, convencer, veröffentlichen, Zusammenfassung]
 comments: true
+categories: Etymology
 ---
 
 As I was learning spanish, I stumbled upon a very interesting verb - **convencer**. It means to convince. The prefix con-, I noticed, may symbolise the interior, or spiritual, manifestation of the verb it is affixed to. Without it, vencer means to overcome, or to win. So vencer - the “regular” verb is an act that is happening outside, the defeat of something exteriorly. And adding the prefix “con” turns it into an inward experience. You don’t defeat outside, you convince - you defeat it inside. 

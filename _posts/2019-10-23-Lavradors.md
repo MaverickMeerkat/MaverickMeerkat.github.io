@@ -4,6 +4,7 @@ title: On Lavradors and Labradors
 subtitle: Which pronounciation is correct?
 tags: [Etymology, Spanish, Labrador, Lavrador, Rotweiler]
 comments: true
+categories: Etymology
 ---
 
 I own a Labrador, and I occasionally refer to him as a Lavrador. On some occasions I get corrected by annoying people who think they know better.

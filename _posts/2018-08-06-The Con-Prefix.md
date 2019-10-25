@@ -4,6 +4,7 @@ title: The Spanish Con-prefix
 subtitle: Togtherness vs. Internalizer
 tags: [Etymology, Spanish, con]
 comments: true
+categories: Etymology
 ---
 
 It is a common belief that the con- prefix means “together” or “with”. 

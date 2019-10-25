@@ -4,6 +4,7 @@ title: German Word Meaning - 1
 subtitle: Etymology rocks
 tags: [Etymology, aufgabe, überlegen, Gemeinschaft, Unterscheid]
 comments: true
+categories: Etymology
 ---
 
 **Aufgabe** - auf is above, gabe is give, so aufgabe (work, job) is that which is given from above, either from your boss, parent, or god. Because if you choose to do it, it is not work, it's play. But if it's given from above - then it is work!

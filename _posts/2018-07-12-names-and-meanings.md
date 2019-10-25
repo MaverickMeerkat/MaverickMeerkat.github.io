@@ -4,6 +4,7 @@ title: Names and Meanings
 subtitle: The development of words through time and cultures
 tags: [Etymology, Spanish, Hebrew, Liver, a Think]
 comments: true
+categories: Etymology
 ---
 
 It is interesting to see how words can change meaning over cultures, and over time.
