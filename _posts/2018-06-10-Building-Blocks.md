@@ -2,7 +2,6 @@
 layout: post
 title: The basic building blocks of languages
 subtitle: pre-words concepts
-date: 2018-06-10
 tags: [Etymology, Thinks, convencer, veröffentlichen, Zusammenfassung]
 comments: true
 categories: Etymology
