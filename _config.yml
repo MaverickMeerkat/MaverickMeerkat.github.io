@@ -56,7 +56,7 @@ footer-link-col: "#404040"
 # instead of colour
 
 navbar-img: "/img/meerkats.jpg"
-footer-img: "/img/footer.jpg"
+footer-img: "/img/meerkats.jpg"
 page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
