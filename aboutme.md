@@ -7,7 +7,7 @@ subtitle: To bravely go, where no Meerkat has gone before
 > “Trying to define yourself is like trying to bite your own teeth.” - Alan Watts
 
 ![](../img/Meerkat.jpg){: .center-block :}
-*Thanks for Greg Wallace for the beautiful Meerkat photo in this page*{: .center-block :}
+<p align="center"><i>Thanks for Greg Wallace for the beautiful Meerkat photo in this page</i></p>
 
 I'm a Maverick Meerkat, who's interested in the reality behind and in between the reality we all experience. 
 
