@@ -5,7 +5,7 @@ subtitle: German Bread Culture
 tags: [Bread, German, History, Culture]
 comments: true
 categories: History
-publish: False
+published: false
 ---
 
 I recently had a conversation about bread with a German person. I didn't realize in what a dangerous politically territory I was stepping into. The Germans seem to be fanatics of "Black" bread, and just you dare say something against the obvious superiority of their beloved bread, and you will get scorns.

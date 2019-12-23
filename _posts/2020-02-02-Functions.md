@@ -5,7 +5,7 @@ subtitle: Philosophical intuition behind functions
 tags: [Math, Functions, Duality]
 comments: true
 categories: Math
-publish: False
+published: false
 ---
 
 What are functions?
