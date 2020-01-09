@@ -7,6 +7,9 @@ comments: true
 categories: Math, Machine-Learning
 published: true
 ---
+I recently completed a [Coursera specialization in Reinforcement Learning](https://www.coursera.org/specializations/reinforcement-learning) (RL) [which I highly recommeded]. The idea behind it, in a nutshell, is to model an environment and an agent that interacts with each other. The agents processes the current state he is in, and based on his learning model chooses an action which it thinks can maximize its reward. This is somewhat of a different mind-set than Supervised Learning, where you assume you have inputs and corresponding labels or targets, and you are trying to learn a good mapping between the two. The main objective in RL is to learn a good value function for the different states and actions. i.e. given a state, what is the best action? This is a more dynamic type of problem, as each state depends on the previous state and action. Also, the rewards are not constant (they don't correct **every** step you make), and the consequences of an action can sometimes only be determined many steps forward.
+
+I decided to put my skills into use and build an AI agent that can play Tic-Tac-Toe.
 
 ![](../img/TicTacToe/tictactoe.png){: .center-block :} 
 
@@ -14,12 +17,6 @@ Links to jupyter notebooks:
 [Exact Agent](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20Part%201.ipynb)
 [NN Agent](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20Part%202.ipynb)
 [Agents vs. Dummy](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20part%203%20-%20Agent%20vs.%20Dummy%20Agent.ipynb)
-
-I recently completed a [Coursera specialization in Reinforcement Learning](https://www.coursera.org/specializations/reinforcement-learning) (RL) [which I highly recommeded]. The idea behind it, in a nutshell, is to model an environment and an agent that interacts with each other. The agents processes the current state he is in, and based on his learning model chooses an action which it thinks can maximize its reward. This is somewhat of a different mind-set than Supervised Learning, where you assume you have inputs and corresponding labels or targets, and you are trying to learn a good mapping between the two. The main objective in RL is to learn a good value function for the different states and actions. i.e. given a state, what is the best action? This is a more dynamic type of problem, as each state depends on the previous state and action. Also, the rewards are not constant (they don't correct **every** step you make), and the consequences of an action can sometimes only be determined many steps forward.
-
-I decided to put my skills into use and build an AI agent that can play Tic-Tac-Toe.
-
-![](../img/TicTacToe/robot.jpg){: .center-block :}
 
 I set out to model the environment. This was not so hard - there are basically 9 places that can contain value, and there are 3 possible values - X (-1), nothing (0) and O (+1). I decided to give a reward of +10 for the agent that wins, a reward of -1 for every step that doesn't end the game (in order to encourage fast winning), a reward of 0 for a tie, and a reward of -10 for the agent that loses. The environment also returns a mask of available spaces, used by the agent to decide which of its actions are available. 
 
@@ -47,6 +44,8 @@ def env_step(self, agent_num, index):
 ``` 
 
 I then set out to model the agent. 
+
+![](../img/TicTacToe/robot.jpg){: .center-block :}
 
 All my approaches use an algorithm called (1-step) [SARSA](https://en.wikipedia.org/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action), which stands for: State, Action, Reward, (next) State, (next) Action. Basically, the agent utilizes all of these to update it's value function. The agent starts with an empty value function. Instead of playing a game to completion and only then updating it's value funcion, it uses every SARSA transition to update the function every step, bootstrap style. I won't go too much in depth over this. You can check either the coursera courses, or section 6.5 in [Sutton & Barto's book (2nd edition)](https://d3c33hcgiwev3.cloudfront.net/Ph9QFZnEEemRfw7JJ0OZYA_808e8e7d9a544e1eb31ad11069d45dc4_RLbook2018.pdf?Expires=1578700800&Signature=kknv~Fe2hgmHae7aID4u9P9BUwvcIQ2F5qaNopIiaOpjUeiqESW6W4xhnji1Yyf1dEgNg5NvaKCqAOtHPX65N4LFHM3cU-Zj3WQFRl1S~NM79uQSWijIvnCNAIvPVSLct6i5u7Ruc-IkWYDGoPFtyHUWq8iFH1WJBuOZTaw~QzQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A). The main equation of this algorithm is:
 
@@ -94,7 +93,13 @@ In the end there were only about ~4500 states that it encountered during 30k gam
 
 Function approximation is a way to deal with complexity. Instead of dealing with the incredibly complex, you simplify things - and in some cases it works well enough. The idea behind it in RL is that instead of saving all of the states, and creating an "Exact" agent that holds different action values per state, you create a function approximation and have the agent only hold that. The agent get's a state, puts it in its function, and gets back action-values. This is a way of looking at functions as approximation, as useful abstraction of the too complex. The gaussian normal distribution is actually a good example of this - it was motivated by the need to approximate the binomial distribution ([source 1](http://onlinestatbook.com/2/normal_distribution/history_normal.html), [source 2](https://www.maa.org/sites/default/files/pdf/upload_library/22/Allendoerfer/stahl96.pdf)).
 
-So I chose the function to be a Feed-Forward Neural-Network (FFNN) with a 9x36x36x9 architecture, where the 1st 9 units correspond to the state, and the last 9 units correspond to the action values. I used a sigmoid for the activations in the two hidden layers. I also played with ReLu's but since this is a relatively shallow NN, sigmoids work fine. 
+This variation of SARSA is called semi-gradient (1-step) SARSA. It's equation is:
+
+![](../img/TicTacToe/SemiGradientSARSAeq.png)
+
+Instead of updating a value function "action values", you update the weights of the value function approximator. You can read more about it in chapter 10 of Sutton & Barto's book.
+
+I chose the function to be a Feed-Forward Neural-Network (FFNN) with a 9x36x36x9 architecture, where the 1st 9 units correspond to the state, and the last 9 units correspond to the action values. I used a sigmoid for the activations in the two hidden layers. I also played with ReLu's but since this is a relatively shallow NN, sigmoids work fine. I use a mean-squared-error because that is what is assumed by the semi-gradient SARSA to be the loss function, and because it fits.
 
 ![NN](../img/TicTacToe/nn.png){: .center-block :}
 
@@ -122,9 +127,10 @@ class SimpleKerasNN():
         self.model.fit(input, target, batch_size=1, verbose=0)
 ```
 
-The final layer has no activation. Instead I pass it through a softmax function, I then mask out the non available options, divide by the remaining sum to get the adjusted probabilities, and I then sample from the availble actions given the probabilities. Basically - if an action is **REALLYYYY** good, the agent will choose it almost always. If it's only *somewhat* good, it will choose it more requently than others, but will continue to explore. Making the agent non-deterministic allows it to continue to explore. Giving it a tau / temperature parameter to adjust the softmax can tell it how much to explore and how much to go for the "greedy" (currently best known) action. 
+The final layer has no activation. Instead I pass it through a [softmax](https://themaverickmeerkat.com/2019-10-23-Softmax/) function, I then mask out the non available options, divide by the remaining sum to get the adjusted probabilities, and I then sample from the availble actions given the probabilities. Basically - if an action is **REALLYYYY** good, the agent will choose it almost always. If it's only *somewhat* good, it will choose it more requently than others, but will continue to explore. Making the agent non-deterministic allows it to continue to explore. Giving it a tau / temperature parameter to adjust the softmax can tell it how much to explore and how much to go for the "greedy" (currently best known) action. 
 
 Here is the code for agent_step and policy:
+
 ```python
 def policy(self, state, mask):
     action_values = self.network.predict(state)
@@ -147,6 +153,8 @@ def agent_step(self, reward, state, mask):
     self.last_action = action
     return action
 ```
+
+The update is done by the Keras train method. I just pass the (bootstrapped) "real" target value of the action values, and it will take care of the rest.
 
 I trained two agents to play against each other. After 50k games they still didn't reach a tie stand-off. But the percentage of ties was slowly increasing. 
 
