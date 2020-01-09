@@ -79,7 +79,7 @@ I trained 2 agents to play against each other. After about 30k games, they reach
 I can hardly express the coolness feeling of this. I actually made a piece of software that can kick ass in Tic Tac Toe.
 
 <!-- <img src="https://gph.is/YBcxYe"/>{: .center-block :} -->
-<iframe src="https://giphy.com/embed/62PP2yEIAZF6g" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p align="center"><a href="https://giphy.com/gifs/swag-80s-sunglasses-62PP2yEIAZF6g"></a></p>
+<iframe src="https://giphy.com/embed/62PP2yEIAZF6g" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/swag-80s-sunglasses-62PP2yEIAZF6g"></a></p>
 
  I played a game against it, and sure enough - it knew what it was doing! Here's a visualization of how the game went, X is the ai agent, which started 1st. I'm O. I made a mistake on purpose on my 3rd move to see if it would take advantage and win, and it did.
 
