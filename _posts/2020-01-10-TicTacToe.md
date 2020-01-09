@@ -5,8 +5,8 @@ subtitle: An RL stand-off
 tags: [Math, RL, ML, AI, Reinforcment Learning]
 comments: true
 categories: Math, Machine-Learning
-published: true
 ---
+
 I recently completed a [Coursera specialization in Reinforcement Learning](https://www.coursera.org/specializations/reinforcement-learning) (RL) [which I highly recommeded]. The idea behind it, in a nutshell, is to model an environment and an agent that interacts with each other. The agents processes the current state he is in, and based on his learning model chooses an action which it thinks can maximize its reward. This is somewhat of a different mind-set than Supervised Learning, where you assume you have inputs and corresponding labels or targets, and you are trying to learn a good mapping between the two. The main objective in RL is to learn a good value function for the different states and actions. i.e. given a state, what is the best action? This is a more dynamic type of problem, as each state depends on the previous state and action. Also, the rewards are not constant (they don't correct **every** step you make), and the consequences of an action can sometimes only be determined many steps forward.
 
 I decided to put my skills into use and build an AI agent that can play Tic-Tac-Toe.
@@ -14,8 +14,8 @@ I decided to put my skills into use and build an AI agent that can play Tic-Tac-
 ![](../img/TicTacToe/tictactoe.png){: .center-block :} 
 
 Links to jupyter notebooks:
-[Exact Agent](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20Part%201.ipynb)
-[NN Agent](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20Part%202.ipynb)
+[Exact Agent](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20Part%201.ipynb), 
+[NN Agent](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20Part%202.ipynb), 
 [Agents vs. Dummy](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20part%203%20-%20Agent%20vs.%20Dummy%20Agent.ipynb)
 
 I set out to model the environment. This was not so hard - there are basically 9 places that can contain value, and there are 3 possible values - X (-1), nothing (0) and O (+1). I decided to give a reward of +10 for the agent that wins, a reward of -1 for every step that doesn't end the game (in order to encourage fast winning), a reward of 0 for a tie, and a reward of -10 for the agent that loses. The environment also returns a mask of available spaces, used by the agent to decide which of its actions are available. 
@@ -79,7 +79,7 @@ I trained 2 agents to play against each other. After about 30k games, they reach
 I can hardly express the coolness feeling of this. I actually made a piece of software that can kick ass in Tic Tac Toe.
 
 <!-- <img src="https://gph.is/YBcxYe"/>{: .center-block :} -->
-<iframe src="https://giphy.com/embed/62PP2yEIAZF6g" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/swag-80s-sunglasses-62PP2yEIAZF6g"></a></p>
+<iframe src="https://giphy.com/embed/62PP2yEIAZF6g" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p align="center"><a href="https://giphy.com/gifs/swag-80s-sunglasses-62PP2yEIAZF6g"></a></p>
 
  I played a game against it, and sure enough - it knew what it was doing! Here's a visualization of how the game went, X is the ai agent, which started 1st. I'm O. I made a mistake on purpose on my 3rd move to see if it would take advantage and win, and it did.
 
@@ -97,9 +97,9 @@ This variation of SARSA is called semi-gradient (1-step) SARSA. It's equation is
 
 ![](../img/TicTacToe/SemiGradientSARSAeq.png)
 
-Instead of updating a value function "action values", you update the weights of the value function approximator. You can read more about it in chapter 10 of Sutton & Barto's book.
+Instead of updating a value function "action values", you update the weights of the value function approximator. You set up an objective function to be the mean-square-loss between the current values, and the "real" values. I say "real" because again you are not using the factual real values but a bootstrapped version of your last estimation with the newest reward you obtained. You can read more about it in chapter 10 of Sutton & Barto's book.
 
-I chose the function to be a Feed-Forward Neural-Network (FFNN) with a 9x36x36x9 architecture, where the 1st 9 units correspond to the state, and the last 9 units correspond to the action values. I used a sigmoid for the activations in the two hidden layers. I also played with ReLu's but since this is a relatively shallow NN, sigmoids work fine. I use a mean-squared-error because that is what is assumed by the semi-gradient SARSA to be the loss function, and because it fits.
+I chose the function to be a Feed-Forward Neural-Network (FFNN) with a 9x36x36x9 architecture, where the 1st 9 units correspond to the state, and the last 9 units correspond to the action values. I used a sigmoid for the activations in the two hidden layers. I also played with ReLu's but since this is a relatively shallow NN, sigmoids work fine. I use a mean-squared-error because that is what is assumed by the semi-gradient SARSA to be the objective/loss function, and because it fits.
 
 ![NN](../img/TicTacToe/nn.png){: .center-block :}
 
