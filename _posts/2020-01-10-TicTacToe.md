@@ -19,7 +19,7 @@ I recently completed a [Coursera specialization in Reinforcement Learning](https
 
 I decided to put my skills into use and build an AI agent that can play Tic-Tac-Toe.
 
-![](../img/TicTacToe/robot.png){: .center-block :}
+![](../img/TicTacToe/robot.jpg){: .center-block :}
 
 I set out to model the environment. This was not so hard - there are basically 9 places that can contain value, and there are 3 possible values - X (-1), nothing (0) and O (+1). I decided to give a reward of +10 for the agent that wins, a reward of -1 for every step that doesn't end the game (in order to encourage fast winning), a reward of 0 for a tie, and a reward of -10 for the agent that loses. The environment also returns a mask of available spaces, used by the agent to decide which of its actions are available. 
 
@@ -79,7 +79,8 @@ I trained 2 agents to play against each other. After about 30k games, they reach
 
 I can hardly express the coolness feeling of this. I actually made a piece of software that can kick ass in Tic Tac Toe.
 
-<img src="https://gph.is/YBcxYe"/>{: .center-block :}
+<!-- <img src="https://gph.is/YBcxYe"/>{: .center-block :} -->
+<iframe src="https://giphy.com/embed/62PP2yEIAZF6g" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/swag-80s-sunglasses-62PP2yEIAZF6g"></a></p>
 
  I played a game against it, and sure enough - it knew what it was doing! Here's a visualization of how the game went, X is the ai agent, which started 1st. I'm O. I made a mistake on purpose on my 3rd move to see if it would take advantage and win, and it did.
 
@@ -95,7 +96,7 @@ Function approximation is a way to deal with complexity. Instead of dealing with
 
 So I chose the function to be a Feed-Forward Neural-Network (FFNN) with a 9x36x36x9 architecture, where the 1st 9 units correspond to the state, and the last 9 units correspond to the action values. I used a sigmoid for the activations in the two hidden layers. I also played with ReLu's but since this is a relatively shallow NN, sigmoids work fine. 
 
-![NN](../img/TicTacToe/nn.png) {: .center-block :}
+![NN](../img/TicTacToe/nn.png){: .center-block :}
 
 I set up the network using Keras. It's really simple:
 
