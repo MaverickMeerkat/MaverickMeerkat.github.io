@@ -18,3 +18,5 @@ Cross-Entropy can be thought of as a measure of how much one distribution differ
 
 \\( 1/x^{2} \\)
 $$E=MC^2$$
+
+my math expression is \(x^2\)
