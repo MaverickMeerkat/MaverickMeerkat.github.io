@@ -12,14 +12,7 @@ mathjax: true
 
 Inline math $f(x)=x^2$
 
-\\( 1/x^{2} \\)
-
 test 12 3
-
-t
-[](raw: $$ 5 + 5 $$)
-
-$$E=mc^2$$
 
 $$
 \begin{aligned}
@@ -39,3 +32,6 @@ $$
 $$
 
 Cross-Entropy can be thought of as a measure of how much one distribution differs from a 2nd distribution, which is the ground truth. It is one of the two terms in the KL-Divergence, which is also a sort-of measure of (non-symmetric) distance between two distribution, the other term being the ground-truth entropy. But in machine learning, 
+
+
+\\( 1/x^{2} \\)
