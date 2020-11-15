@@ -7,10 +7,14 @@ comments: true
 categories: Math, Machine Learning
 published: true
 usemathjax: true
+mathjax: true
 ---
 
 Inline math $f(x)=x^2$
 
+\\( 1/x^{2} \\)
+
+test 12 3
 
 t
 [](raw: $$ 5 + 5 $$)
