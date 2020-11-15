@@ -15,8 +15,5 @@ test 12 3
 
 Cross-Entropy can be thought of as a measure of how much one distribution differs from a 2nd distribution, which is the ground truth. It is one of the two terms in the KL-Divergence, which is also a sort-of measure of (non-symmetric) distance between two distribution, the other term being the ground-truth entropy. But in machine learning, 
 
-
-\\( 1/x^{2} \\)
-$$E=MC^2$$
-
-my math expression is \(x^2\)
+$$\log{x^2} \frac{1}{\sqrt{4}}
+$$
