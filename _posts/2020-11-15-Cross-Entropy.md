@@ -9,7 +9,8 @@ published: true
 usemathjax: true
 ---
 
-[]($$ 5 + 5 $$)
+t
+[](raw: $$ 5 + 5 $$)
 
 $$E=mc^2$$
 
