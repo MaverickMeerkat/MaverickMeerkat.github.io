@@ -1,11 +1,11 @@
 ---
 layout: post
-title: What are functions
+title: 3 Different Views on Functions
 subtitle: Philosophical intuition behind functions
 tags: [Math, Functions, Duality]
 comments: true
 categories: Math
-published: false
+published: true
 ---
 
 What are functions?
@@ -14,6 +14,6 @@ One way to look at functions is as a unit of work. A processing unit. You enter 
 
 Another way to look at functions is as a transformation. You map a value in one domain to a different value in another domain. Here the role of the function is to be a map. You want to know where your position is real life corresponds to your position in the map. A translation. You want to translate a value (word) in one language to another. The reason being that it might be easier to do some operations in one domain over the other.
 
-Another way to look at functions is as an approximation. This is a completely different view on the matter. This view says that the reality is too complex. If you try to model it too precisely you will run out of space and time. So you need a shortcut. Something that is good enough for all practical uses. One such example is the Gaussian function: f(x) = 1/sqrt(2pi*sigma^2)exp(-(x-mu)^2/sigma^2). This function was invented/discovered/refined by Gauss, a famous mathematician, to help approximate the binomial discrete distribution. Instead of computing (back then - by hand) the exact probability of getting 321 heads or lower in a 1000 toss game, you could use this shortcut and get an **almost** precise number. 
+Another way to look at functions is as an approximation. This is a completely different view on the matter. This view says that the reality is too complex. If you try to model it too precisely you will run out of space and time. So you need a shortcut. Something that is good enough for all practical uses. One such example is the Gaussian function (or distribution). This function can help approximate the binomial discrete distribution. Instead of computing (by hand) the exact probability of getting 321 heads or lower in a 1000 toss game, you could use this shortcut and get an **almost** precise number. 
 
-Checking these different views give birth to a higher generality - functions are **useful abstractions** that help us model the reality around us. 
+Checking these three different views give birth to a higher generality - functions are **useful abstractions** that help us model the reality around us. 
