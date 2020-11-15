@@ -9,6 +9,7 @@ published: true
 usemathjax: true
 ---
 
+[]($$ 5 + 5 $$)
 
 $$E=mc^2$$
 
