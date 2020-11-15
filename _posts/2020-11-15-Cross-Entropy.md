@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Cross Entropy
-subtitle: 
-tags: [Math, Loss Functions, ML, KL-Divergence]
+subtitle: A useful objective function in ML
+tags: [Math, Loss-Functions, ML, KL-Divergence, Cross-Entropy]
 comments: true
 categories: Math, Machine Learning
 published: true
