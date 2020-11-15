@@ -9,6 +9,9 @@ published: true
 usemathjax: true
 ---
 
+Inline math $f(x)=x^2$
+
+
 t
 [](raw: $$ 5 + 5 $$)
 
