@@ -13,7 +13,7 @@ So here's a small picture to remind myself:
 
 ![](../img/NecessarySufficient/Picture1.png){: .center-block :}
 
-Suppose we care about condition A. It is very important to us. But there are condition N which is a superset of condition A. And there is condition S which is a subset of condition A. 
+Suppose we care about condition A. It is very important to us. But there is condition N which is a superset of condition A. And there is condition S which is a subset of condition A. 
 
 N is **necessary** for A. No element in A, is not also a part of N. 
 
