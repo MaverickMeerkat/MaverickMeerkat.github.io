@@ -26,4 +26,4 @@ Take for example the verb to publish, in English. German has both **publizieren*
 Another example: **Zusammenfassung** means summary. Summary comes from sum, which in latin means total. So sort of a total view of the entire object. The German word Zusammen means together, or combined, and fassung means “grasping” or “framing”. I.e. grasping and taking parts of different things and putting them together. So the German notion is quite different than the latin one. While the latin notion looks at a summary as sort of a totality of one unified object, the german Zusammenfassung looks at it as some sort of a patchwork of different objects (different chapters or topics in the report, for example).
 
 ***
-If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my professional [website](https://meerkatstatistics.com/)  or contact me directly at <david@meerkatstatistics.com>

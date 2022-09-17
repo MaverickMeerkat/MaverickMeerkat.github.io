@@ -17,4 +17,4 @@ categories: Etymology
 
 
 ***
-If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my professional [website](https://meerkatstatistics.com/)  or contact me directly at <david@meerkatstatistics.com>

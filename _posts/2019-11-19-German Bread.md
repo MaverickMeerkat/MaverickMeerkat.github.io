@@ -27,4 +27,4 @@ Lange Zeit kamen helle Brotsorten aus feinem Mehl nur auf die Tische reicher Bev
 For the general population, bread as a staple food only played a role since the late Middle Ages , since bread was too expensive until then. Instead, much of the population ate porridge. From about the 12th century, the bakers organized in guilds
 
 ***
-If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my professional [website](https://meerkatstatistics.com/)  or contact me directly at <david@meerkatstatistics.com>

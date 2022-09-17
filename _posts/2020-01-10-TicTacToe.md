@@ -177,4 +177,4 @@ It took 50k games to reach a less optimal level than the exact model. The NN mod
 I [tried](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20part%202.5.ipynb) using a NN of 9x12x12x9 - but couldn't get good results with it. I [also](https://github.com/MaverickMeerkat/Reinforcement-Learning/blob/master/TicTacToe/TicTacToe%20using%20SARSA%20-%20part%202.75%20-%20Convolution%20NN.ipynb) played around with a convolution architecture, but again to no avail. 
 
 ***
-If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my professional [website](https://meerkatstatistics.com/)  or contact me directly at <david@meerkatstatistics.com>

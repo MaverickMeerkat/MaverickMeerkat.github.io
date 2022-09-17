@@ -33,4 +33,4 @@ It could be that in even more ancient times, the existence of this organ was not
 The words and meaning changed, as the function and understanding, the concept of the think, changed. 
 
 ***
-If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my professional [website](https://meerkatstatistics.com/)  or contact me directly at <david@meerkatstatistics.com>

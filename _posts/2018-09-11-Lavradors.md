@@ -26,4 +26,4 @@ SO, recap - why are Labradors called Labradors? Because they got mixed with the 
 On a side note - **Rotweilers** are named after the city of Rotweil, Germany, where it was used by travelling butchers to protect their cattle. (Their full name is Rottweiler "Metzgerhunds", or "Butchers' Dogs"). Rotweil (probably) comes from rote Villa / Rutvilla, literally red-villa, which alludes probably to the color of houses of the city in ancient times. So a dog breed name comes from a city name, that comes from the color of a distinguished house colors it had. 
 
 ***
-If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my professional [website](https://meerkatstatistics.com/)  or contact me directly at <david@meerkatstatistics.com>
