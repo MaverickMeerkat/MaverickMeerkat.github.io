@@ -54,3 +54,6 @@ Or if you prefer a 3D graph:
 ![](../img/CrossEntropy/3Dcontour.png){: .center-block :}
 
 So in conclusion cross entropy is an important meaure of distance between any 2 distributions, they are a very popular choice for discrete classification problems, where the ground truth labels are 1-hot vectors, and are even more simple and useful in binary classifications, where the loss can be viewed in a single 2D graph. 
+
+***
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 

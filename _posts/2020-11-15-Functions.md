@@ -17,3 +17,7 @@ Another way to look at functions is as a transformation. You map a value in one 
 Another way to look at functions is as an approximation. This is a completely different view on the matter. This view says that the reality is too complex. If you try to model it too precisely you will run out of space and time. So you need a shortcut. Something that is good enough for all practical uses. One such example is the Gaussian function (or distribution). This function can help approximate the binomial discrete distribution. Instead of computing (by hand) the exact probability of getting 321 heads or lower in a 1000 toss game, you could use this shortcut and get an **almost** precise number. 
 
 Checking these three different views give birth to a higher generality - functions are **useful abstractions** that help us model the reality around us. 
+
+
+***
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 

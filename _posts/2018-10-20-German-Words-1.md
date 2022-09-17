@@ -14,3 +14,7 @@ categories: Etymology
 **Gemeinschaft** - Gemein- is a root that means common. Gemeine is a commoner (noun), Gemeinsam is common (adjective). Schaft means shaft, or stem, or stock. So it means that it all belongs to the common stem. Together it means a community, or a collective. You will see it also with Wohngemeinschaft (Wohn being residential) meaning residential+community = shared appartment. Or Lebensgemeinschaft (Leben being life) so Life+community = shared life (usually reffered to a couple living together in the same house but not married). 
 
 **Unterscheid** - unter is under, schied or scheid are words meaning sides, or parts (Scheide means vagina, or a scabbard - because it has two opposite sides; Scheiden means parting), and together this means “difference”. So under+parting means difference. It’s kind of like all things are parted in this world, but if you want to see or understand their difference, you have to find the under-parting, or the underlying “ruler” in which you can explain their difference. Schiedsmann or Schiedsrichter means arbiter (parts-man or parts-judge), i.e. the person responsible for the opposite sides. 
+
+
+***
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 

@@ -31,3 +31,6 @@ This last example is quite remarkable. An organ is called by a dish that was bei
 It could be that in even more ancient times, the existence of this organ was not known. It was not clear that there is this similar unit or structure in humans and vertebrates. And so no name for it existed. 
 
 The words and meaning changed, as the function and understanding, the concept of the think, changed. 
+
+***
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 

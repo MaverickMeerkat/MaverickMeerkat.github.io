@@ -25,3 +25,6 @@ Lange Zeit kamen helle Brotsorten aus feinem Mehl nur auf die Tische reicher Bev
 18th century - massive growth of population... law makers try to force the public to eat whole-grain, to reduce the anger against them
 
 For the general population, bread as a staple food only played a role since the late Middle Ages , since bread was too expensive until then. Instead, much of the population ate porridge. From about the 12th century, the bakers organized in guilds
+
+***
+If you’re looking for statistical consultation, work on interesting projects, or training workshop, visit my website https://meerkatstatistics.com/  or contact me directly at david@meerkatstatistics.com 
